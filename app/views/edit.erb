@@ -1,0 +1,14 @@
+<h1>Yo DAWG, it's me Xzibit!</h1>
+<h2>It's time to PIMP 👏 YOUR 👏 ARTIST👏</h2>
+....i heard you like artists, so i put artists in your artists
+<br>
+but if you don't like it... then change it! 💰
+<br>
+
+<form action="/artist/<%= @artist.id %>" method="post">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  NAME:<input type="text" name="name">
+  AGE:<input type="number" name="age">
+  SHORT BIO..LIKE REALLY SHORT:<input type="text" name="bio">
+  <input type="submit" value="Change That Shit"
+</form>

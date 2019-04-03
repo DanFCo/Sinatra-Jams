@@ -1,0 +1,10 @@
+<h1>YO!</h1>
+<br>
+<h1>These are the Artists You have been looking for</h1>
+
+<% Artist.all.each do|artist|%>
+<h3><a href="/artist/<%=artist.id%>"><%= artist.name %></a>
+  🎤AGE:  <%= artist.age %>
+
+  🎤BIO:  <%= artist.bio %></h3>
+<% end %>

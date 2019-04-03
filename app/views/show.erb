@@ -1,0 +1,10 @@
+Can't believe you actually listen to <h2><%= @artist.name%></h2> isn't
+that person like <h2><%= @artist.age %></h2>... i heard they <h2><%= @artist.bio %></h2>
+
+
+<h1> you should like get rid of that person cause they suck</h1>
+
+<form action="/artist/<%= @artist.id %>/delete" method="post">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+  <input type="submit" value="BOOO">
+</form>
